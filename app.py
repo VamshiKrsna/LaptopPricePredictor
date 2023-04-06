@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import joblib
 
-model = joblib.load('C:\\Users\\Rizen3\\Desktop\\vamshi\\Work\\Innomatics\\LaptopProject\\rfr_model.pkl')
+model = joblib.load('rfr_model.pkl')
 
 st.title("Laptop Price Predictor")
 
