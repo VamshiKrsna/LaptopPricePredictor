@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 
-data = pd.read_csv('C:\\Users\\Rizen3\\Desktop\\Vamshi\\Work\\Innomatics\\LaptopProject\\model_data.csv')
+data = pd.read_csv('model_data.csv')
 data = data.drop('Unnamed: 0',axis = 1)
 X = data.drop('MRP',axis = 1) # MRP IS OUR TARGET
 y = data['MRP'] 
