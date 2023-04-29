@@ -1,13 +1,13 @@
 import streamlit as st
 import numpy as np
-import joblib
+import pickle as pkl
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 MODEL_PATH = os.path.join(BASE_DIR, 'rfr_model.pkl')
 
-model = joblib.load(MODEL_PATH)
+model = pkl.load(MODEL_PATH)
 
 st.title("Laptop Price Predictor")
 
