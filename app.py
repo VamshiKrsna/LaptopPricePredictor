@@ -2,7 +2,11 @@ import streamlit as st
 import numpy as np
 import joblib
 
-model = joblib.load('rfr_model.pkl')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MODEL_PATH = os.path.join(BASE_DIR, 'rfr_model.pkl')
+
+model = joblib.load(MODEL_PATH)
 
 st.title("Laptop Price Predictor")
 
